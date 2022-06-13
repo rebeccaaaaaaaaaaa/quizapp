@@ -7,7 +7,7 @@
 - Decidi colocar todo o projeto no app.js momentaneamente mas em uma futura refatoração vou componentizar corretamente a aplicação.
 - Para as perguntas, criei um objeto js e mapeei esse objeto em uma lista utilizando a funcão map.
 
-# Preview (Link do peojetp)
+# Preview [(Link do peojeto) ](https://rebecca-mm-landing.netlify.app/)
 
 - Página inicial
 <img src="https://raw.githubusercontent.com/rebeccaaaaaaaaaaa/quizapp/main/src/images/home.png"/>
