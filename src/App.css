@@ -1,28 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;800&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Inter', sans-serif;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+
+
+}
+
+.appScore{
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 22%;
+  background: #4baafb;
+  left: 25%;
+  padding: 10px;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.questionList{
+  margin-top: 2rem;
+}
+
+.currentQuestion{
+  margin: 2rem;
+  color: #333;
 }
 
 .question-card {
-  /* Center the div  */
   margin: 0 auto;
-
-  /* Dimensions  */
-  width: 80%; /* Can be in percentage also. */
+  width: 50%;
   height: auto;
-
-  /* Visual  */
-  background-color: gray;
-  padding: 16px;
+  padding: 35px;
   border-radius: 16px;
   color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
 }
 
 ul {
@@ -31,40 +59,42 @@ ul {
 
 li {
   margin-top: 8px;
-  background-color: darkgray;
+  background-color: transparent;
   padding: 16px;
-  border: 3px solid white;
+  border: 2px solid #333;
   border-radius: 20px;
   font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+ transform: scale(1.1);
 }
 
 .question-text {
-  color: darkblue;
+  color: #333;
   font-size: 24px;
 }
 
 /* Final Results  */
 
 .final-results {
-  /* Center the div  */
   margin: 0 auto;
-
-  /* Dimensions  */
-  width: 50%; /* Can be in percentage also. */
   height: auto;
-  margin-top: 64px;
-
-  /* Visual  */
-  background-color: gray;
   padding: 16px;
   border-radius: 16px;
-  color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  color: #333;
+  box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+
+.final-results h2{
+  margin: 1rem;
 }
 
 button {
-  background-color: red; /* Green */
+  background-color: #4baafb; /* Green */
   border: none;
   color: white;
   padding: 16px 24px;
@@ -73,6 +103,7 @@ button {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-
+  margin-top: 1rem;
   border-radius: 24px;
+  cursor: pointer;
 }

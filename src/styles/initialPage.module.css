@@ -1,3 +1,53 @@
-.bgRed{
-    background-color: #ff0000;
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.wellcomeSection{
+    background: #dabf72;
+    padding: 6rem;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wellcomeSection img{
+    position: absolute;
+    top: 28%;
+}
+
+.content a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    margin-top: 1rem;
+    display: block;
+
+}
+
+.content a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
 }

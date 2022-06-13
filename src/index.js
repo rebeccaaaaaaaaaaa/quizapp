@@ -8,8 +8,7 @@ import {
 
 import App from './App';
 import InitialPage from './pages/InitialPage';
-import Quiz from './pages/Quiz';
-import FinalResult from './pages/FinalResult';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,8 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<InitialPage />} />
-        <Route path="/quiz" element={<Quiz />} />
-        <Route path="/final" element={<FinalResult />} />
+        <Route path="/quiz" element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
