@@ -22,7 +22,6 @@
 
 - Reactjs
 - CSS Modules
-- React Reveal
 
 # Deploy
 
